@@ -123,7 +123,7 @@ CheckCell PROC
     mul ebx
     add eax, edi
     mov al, grid[eax] ; Get cell value
-    cmp al, 45 ; Check if cell is a mine
+    cmp al, 1 ; Check if cell is a mine
     je hitMine
     mov grid[eax], 2 ; Mark cell as revealed
     xor al, al
